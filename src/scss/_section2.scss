@@ -1,0 +1,57 @@
+@import '_mixins.scss';
+
+.section2{
+  width: 100%;
+  height: 670px;
+  background-color: $colore_arancione;
+  @include centra;
+
+}
+.container_section2, .container_section2bis{
+  width: 90%;
+  @include colonne_centrate;
+  //border: 1px solid green;
+  padding: $padding_50 0;
+
+}
+.container_section2bis{
+  border-top: 1px solid lightgrey;
+}
+.titolo{
+  h1{
+    width: 630px;
+    text-align: center;
+    font-size: $font_25;
+    font-weight: bold;
+  }
+}
+.tre_img{
+  width: 80%;
+  height: 100%;
+}
+.titolo, .tre_img {
+  margin-bottom: $margin_50;
+
+}
+.container_tre_img{
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 140px;
+    height: 86px;
+  }
+}
+.card{
+  @include colonne_centrate;
+  h2{
+    margin-top: $margin_20;
+  }
+}
+.img_centrale_section1{
+  width: 286px;
+  height: 286px;
+}
+// $elemento: '.button';
+// #{$elemento}{
+//   color: red;
+// }

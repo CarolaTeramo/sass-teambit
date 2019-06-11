@@ -10729,8 +10729,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/carolateramo/Desktop/Boolean/Esercizi/Giugno/Es_3_(10 Giugno)/src/js/model.js */"./src/js/model.js");
-module.exports = __webpack_require__(/*! /Users/carolateramo/Desktop/Boolean/Esercizi/Giugno/Es_3_(10 Giugno)/src/scss/model.scss */"./src/scss/model.scss");
+__webpack_require__(/*! /Users/carolateramo/Desktop/Boolean/Esercizi/Giugno/dove lavoro con node/src/js/model.js */"./src/js/model.js");
+module.exports = __webpack_require__(/*! /Users/carolateramo/Desktop/Boolean/Esercizi/Giugno/dove lavoro con node/src/scss/model.scss */"./src/scss/model.scss");
 
 
 /***/ })

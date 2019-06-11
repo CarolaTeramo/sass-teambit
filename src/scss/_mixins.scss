@@ -1,0 +1,11 @@
+@mixin centra{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin colonne_centrate{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
