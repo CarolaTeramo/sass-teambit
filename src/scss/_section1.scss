@@ -1,31 +1,22 @@
 @import '_mixins.scss';
 
-%righe{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .section1{
   width: 100%;
   height: calc(100%-75px);
   @include centra;
   h1 {
-    font-size: 55px;
+    font-size: $font_55;
     margin: 0 $margin_20 $margin_20 0;
     line-height: 80px;
     color: $text_color;
   }
   h2{
-    font-size: $font_25;
-    line-height: 40px;
-    margin: 0 $margin_20 $margin_20 0;
-
+    @include h2;
   }
 }
 .container_section1{
   width: 90%;
-  @extend %righe;
+  @include righe;
   padding: 100px 0;
   border-top: 1px solid lightgrey;
   //background-color: lightblue;
@@ -39,4 +30,8 @@
 }
 .button1_section1, .button2_section1{
   height: $altezza_header;
+  @include button;
+}
+.inoltra_section1 a{
+  @include inoltra;
 }

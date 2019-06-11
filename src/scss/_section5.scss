@@ -1,0 +1,30 @@
+@import '_mixins.scss';
+
+.section5{
+  @include colonne_centrate;
+  background-color: $colore_arancione;
+  padding: $padding_50 0;
+}
+.titolo_section5{
+  width: 50%;
+  padding: $padding_50;
+  p{
+    font-size: 35px;
+    font-family: $font_family;
+    color: $text_color;
+    text-align: center;
+    line-height: 40px
+  }
+}
+.testo-centrale_section5{
+  width: 50%;
+  padding: $padding_50;
+  background-color: $colore_bianco;
+  margin: $margin_20 0;
+  border-radius: 5px;
+  p{
+    margin-bottom: $margin_50;
+    line-height: 25px;
+    font-family: $font_family;
+  }
+}

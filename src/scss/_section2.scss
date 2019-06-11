@@ -5,14 +5,12 @@
   height: 670px;
   background-color: $colore_arancione;
   @include centra;
-
 }
 .container_section2, .container_section2bis{
   width: 90%;
   @include colonne_centrate;
   //border: 1px solid green;
   padding: $padding_50 0;
-
 }
 .container_section2bis{
   border-top: 1px solid lightgrey;
@@ -31,7 +29,6 @@
 }
 .titolo, .tre_img {
   margin-bottom: $margin_50;
-
 }
 .container_tre_img{
   display: flex;
@@ -43,15 +40,18 @@
 }
 .card{
   @include colonne_centrate;
-  h2{
-    margin-top: $margin_20;
-  }
 }
 .img_centrale_section1{
   width: 286px;
   height: 286px;
 }
-// $elemento: '.button';
-// #{$elemento}{
-//   color: red;
-// }
+$elemento: '.h2_card';
+#{$elemento}{
+  color: $text_color;
+  margin-top: $margin_20;
+  font-size: 18px;;
+  text-align: center;
+  line-height: 25px;
+  font-family: $font_family;
+  width: 270px;
+}

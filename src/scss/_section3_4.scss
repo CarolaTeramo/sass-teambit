@@ -1,0 +1,42 @@
+@import '_mixins.scss';
+
+%impostazione{
+  width: 90%;
+  @include righe;
+  padding: $padding_50 0px;
+}
+.section3{
+  @extend %impostazione
+}
+.img_section3{
+  width: 640px;
+  height: 470px;
+}
+.section3_2{
+  h1{
+    @include h2;
+    //width: 460px;
+  }
+}
+.img_section3_2{
+  width: 270px;
+  height: 200px;
+  margin-left: $margin_50;
+}
+.learn_more{
+  margin: $margin_50 0;
+  a {
+    text-decoration: none;
+    font-size: $font_25;
+    color: $color_learn_more;
+  }
+}
+.section4{
+  @extend %impostazione;
+  margin-left: 200px;
+}
+.img_section3_2_bis{
+  width: 270px;
+  height: 280px;
+  margin-left: $margin_50;
+}

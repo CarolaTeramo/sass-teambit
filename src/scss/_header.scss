@@ -1,34 +1,45 @@
-%centra{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import '_mixins.scss';
+
 #header{
   width: 100%;
-  @extend %centra;
+  @include centra;
   padding: 20px 0;
+  color: $text_color;
+  font-family: $font_family;
   //border: 1px solid green;
 }
 .container_header{
   width: 90%;
   background-color: $colore_bianco;
   height: $altezza_header;
-  display: flex;
-  flex-direction: row;
+  @include righe;
   justify-content: space-between;
-  border: 1px solid red;
-
+  //border: 1px solid red;
 }
 .menu li {
   display: inline-block;
   margin-right: 20px;
 }
 .header_right{
-  @extend %centra;
+  @include centra;
 }
 .header_left{
   line-height: $altezza_header;
+  a{
+    @include inoltra;
+  }
 }
 .button_header{
   height: $altezza_header;
+  background-color: $colore_bianco;
+  color: $color_learn_more;
+  border-radius: 5px;
+  font-family: $font_family;
+  font-size: 13px;
+  padding: 0 10px;
+  border: 1px solid $color_learn_more;
+  &:hover{
+    background-color: #233569;
+    color: $colore_bianco;
+  }
 }

@@ -9,3 +9,31 @@
   flex-direction: column;
   justify-content: space-between;
 }
+@mixin righe {
+  display: flex;
+  flex-direction: row;
+}
+@mixin h2 {
+  font-size: $font_20;
+  line-height: 40px;
+  margin: 0 $margin_20 $margin_20 0;
+  color: $text_color;
+  font-family: $font_family;
+}
+@mixin button {
+  background-color: $color_learn_more;
+  color: $colore_bianco;
+  border-radius: 5px;
+  font-family: $font_family;
+  font-size: 13px;
+  padding: 0 10px;
+  margin: $margin_20 0;
+  &:hover{
+    background-color: #233569;
+  }
+}
+@mixin inoltra {
+  text-decoration: none;
+  color: $text_color;
+  line-height: 18px;
+}
